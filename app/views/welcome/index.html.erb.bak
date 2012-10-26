@@ -1,2 +1,7 @@
-<h1>Welcome to allendesktop!</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
+	<h1>"Everything you always wanted to know about film finance*</h1>
+	<p>*but were afraid to ask."</p>
+<body>
+<div class="center hero-unit">
+		test
+</div>
