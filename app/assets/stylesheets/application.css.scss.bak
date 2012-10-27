@@ -1,1 +1,7 @@
 @import "bootstrap";
+body container {
+	background-color: #FACC2E
+	}
+.hero-unit {
+	background-color: #FACC2E
+	} 
