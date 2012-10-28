@@ -7,21 +7,26 @@ body {
 	background-color: #FACC2E;
 	}
 
-#splashPage h1 {
+#splashTitleArea {
+	padding: 1.5em;
+	text-align: center;
+	} 
+
+#splashTitleArea h1 {
 	font-family:"Times New Roman",Georgia,Serif;
-	font-size: 6em;
+	font-size: 5em;
 	line-height: 1em;
 	display: inline;
-	text-align: center;
 	letter-spacing: -.05em;
 	} 
 
-#splashPage h4 {
+#splashTitleArea h4 {
 	font-family:"Times New Roman",Georgia,Serif;
 	font-size: 2em;
 	line-height: 1em;
 	display: inline;
 	font-variant:small-caps;
+	
 	} 
 
 
@@ -38,4 +43,11 @@ body {
 	color:white;
 	}
 
-	
+.form-actions {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: inherit;
+    border-top: 0px solid rgb(229, 229, 229);
+    
+    }
