@@ -1,10 +1,49 @@
-<div class="hero-unit">
-	<div class ="span6">	
-		<h1>"Everything you always wanted to know about film finance*</h1>
-		<p>*but were afraid to ask."</p>
-	</div>
-	<div class ="span6">	
-		<h3>Online software that teaches you the film business while creating your custom business plan.</h3>
-	</div>
+<div class ="container">
+	<div class="row-fluid">
+		<div class ="span6">
+			<div id="splashPage">
+				<h1>&#8220;Everything you always wanted to know about</h1><h1 class="fqEmphasis">
+				film finance</h1><h1 class="fqAsterisk">*</h1>
+				</br>
+				<h4 class="fqAsterisk">*</h4><h4>but were afraid to ask.&#8221;</h4>
+			</div>
+		</div>
+		<div class ="span6">	
+			<div id="splashRegister">
+				<h5>Online software that teaches you the film business while creating your custom business plan.</h5>
+				 <div id="registerbox">            
+						<form class="form-vertical" id="registerform" method="POST" action="/register">
+							<p>Sign Up</p>
+							<div class="control-group">
+								<div class="controls">
+									<div class="input-prepend">
+										<span class="add-on"><i class="icon-user"></i></span><input type="text" placeholder="Username" name="username" id="regUsername" autocomplete="Off" />
+									</div>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<div class="input-prepend">
+										<span class="add-on"><i class="icon-envelope"></i></span><input type="text" placeholder="Email" name="userid" id="regUserid" autocomplete="Off" />
+									</div>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<div class="input-prepend">
+										<span class="add-on"><i class="icon-lock"></i></span><input type="password" placeholder="Password" name="passwd" id="regPasswd" autocomplete="Off" />
+									</div>
+								</div>
+							</div>
+							<div class="form-actions">
+								<span class="pull-left"><a href="#" class="flip-link" id="to-recover"></a></span>
+								<span class="pull-right" id="registerWrap"><button class="btn btn-inverse" type="submit" id="registerBtn">Register</button></span>
+								<span class="pull-right" style="display:none" id="registerLoadingWrap"><img src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span>
+							</div>
+						</form>
+					</div>
+			</div>
+		</div>
 
+	</div>
 </div>

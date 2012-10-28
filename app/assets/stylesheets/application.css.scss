@@ -1,7 +1,41 @@
 @import "bootstrap";
-.container {
-	background-color: #FACC2E
+@import "bootstrap-responsive";
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-color: #FACC2E;
 	}
-.hero-unit {
-	background-color: #FACC2E
+
+#splashPage h1 {
+	font-family:"Times New Roman",Georgia,Serif;
+	font-size: 6em;
+	line-height: 1em;
+	display: inline;
+	text-align: center;
+	letter-spacing: -.05em;
 	} 
+
+#splashPage h4 {
+	font-family:"Times New Roman",Georgia,Serif;
+	font-size: 2em;
+	line-height: 1em;
+	display: inline;
+	font-variant:small-caps;
+	} 
+
+
+#splashRegister {
+	padding: 20px;
+	background-color: #000000;
+	color: #FFFFFF;
+	}
+.fqEmphasis {
+	color:red;
+	}
+
+.fqAsterisk {
+	color:white;
+	}
+
+	
