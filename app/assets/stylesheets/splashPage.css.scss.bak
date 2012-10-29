@@ -1,3 +1,10 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import "application.css.scss";
+
+body {
+	background-color: #FACC2E;
+	}
 
 #splashTitleArea {
 	padding: 1.5em;
