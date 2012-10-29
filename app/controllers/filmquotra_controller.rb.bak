@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def index
+  def register
   end
   def myslate
   end

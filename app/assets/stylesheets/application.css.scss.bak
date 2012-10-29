@@ -6,35 +6,6 @@ body {
 	padding-bottom: 40px;
 	background-color: #FACC2E;
 	}
-
-#splashTitleArea {
-	padding: 1em 1em 1em 1em;
-	text-align: center;
-	} 
-
-#splashTitleArea h1 {
-	font-family:"Times New Roman",Georgia,Serif;
-	font-size: 5em;
-	line-height: 1em;
-	display: inline;
-	letter-spacing: -.05em;
-	} 
-
-#splashTitleArea h4 {
-	font-family:"Times New Roman",Georgia,Serif;
-	font-size: 2em;
-	line-height: 1em;
-	display: inline;
-	font-variant:small-caps;
-	margin: 20px 0 0 0;
-	} 
-
-
-#splashRegister {
-	padding: 20px;
-	background-color: #000000;
-	color: #FFFFFF;
-	}
 .fqEmphasis {
 	color:red;
 	}
