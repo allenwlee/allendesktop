@@ -1,5 +1,6 @@
 Allendesktop::Application.routes.draw do
-  get "welcome/index"
+  match "/index", to: "welcome#index"
+  match "/myslate", to: "welcome#myslate"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
