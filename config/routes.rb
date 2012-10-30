@@ -1,6 +1,6 @@
 Allendesktop::Application.routes.draw do
-  match "/index", to: "splashpage#index"
-  match "/myslate", to: "product#myslate"
+  get 'splashpage/index'
+  get 'product/myslate'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
