@@ -1,5 +1,5 @@
 class ProductController < ApplicationController
-  def product#myslate
+  def myslate
   end
 
 end
