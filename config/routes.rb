@@ -1,4 +1,6 @@
 Allendesktop::Application.routes.draw do
+ 
+  root to: 'splashpage#index'
   match '/index', to: 'splashpage#index'
   match '/myslate', to: 'product#myslate'
 
@@ -51,7 +53,7 @@ Allendesktop::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'splashpage#index'
+ 
 
   # See how all your routes lay out with "rake routes"
 
