@@ -1,5 +1,5 @@
 class SplashpageController < ApplicationController
-  def index
+  def splashpage#index
   end
 
 end
