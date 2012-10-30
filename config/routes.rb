@@ -1,5 +1,5 @@
 Allendesktop::Application.routes.draw do
-  match "/index", to: "splashpage#register"
+  match "/index", to: "splashpage#index"
   match "/myslate", to: "product#myslate"
 
   # The priority is based upon order of creation:
@@ -51,7 +51,7 @@ Allendesktop::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'splashpage#register'
+  root :to => 'splashpage#index'
 
   # See how all your routes lay out with "rake routes"
 
