@@ -1,6 +1,6 @@
 Allendesktop::Application.routes.draw do
  
-  root to: 'splashpage#index'
+  root to: 'welcome#index'
 # match '/index', to: 'splashpage#index'
 # match '/myslate', to: 'product#myslate'
 
