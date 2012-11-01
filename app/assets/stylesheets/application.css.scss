@@ -1,12 +1,24 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
- body {
+
+
+body#splashPage {
+	padding-top: 5%;
+	background-color: #FACC2E;
+	}
+
+body#product {
 	padding-top: 60px;
 	padding-bottom: 40px;
-	background-color: #FACC2E;
 
-	} 
+	}
+
+	
+.container {
+	
+	}
+
 .fqEmphasis {
 	color:red;
 	}
@@ -47,8 +59,10 @@
 	} 
 
 #splashRegister {
+	margin: 10%;
+	border-radius: 5%;
 	padding: 20px;
-	background-color: #000000;
+	background-color: rgb(27, 27, 27);
 	color: #FFFFFF;
 	}
 
