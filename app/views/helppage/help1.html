@@ -15,8 +15,6 @@
 <script src="http://external.filmquotra.com/assets/res/js/send_request.js"></script>
 </head>
 <body>
-	
-
 		<div id="header">
 			<h1><a href="/">filmquotra</a></h1>		
 		</div>
@@ -29,93 +27,60 @@
         </div>
             
 		<div id="sidebar">
-		
-			
 			
 				<a href="/myslate/create" class="visible-phone"><i
 					class="icon icon-th-list"></i>Create Project</a>
 			
-			
-			
-			
-		
 		<ul>
 				<li ><a href="/myslate/"><i class="icon icon-home"></i> <span>MySlate</span></a></li>
-				<li class="active"><a href="/myslate/create"><i class="icon icon-home"></i> <span>Create Project</span></a></li>
+				<li><a href="/myslate/create"><i class="icon icon-home"></i> <span>Create Project</span></a></li>
 				<li ><a href=""><i class="icon icon-home"></i> <span>Comps</span></a></li>
 				<li ><a href=""><i class="icon icon-home"></i> <span>Ultimates</span></a></li>
+				<li class="active"><a href="/help"><i class="icon-question-sign"></i> <span>Help</span></a></li>
 			</ul>
 		</div>
-
-
-
-
-
-
     
     <div id="content">
-
     	
 	<div id="content-header">
-		<h1>Outline</h1>
+		<h1>Help</h1>
 	</div>
-	
 	
 	<div id="breadcrumb">
 		<a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-		
-		<a href="/myslate">Project</a>
-		
-		<a href="/myslate/create" class="current">Create</a>
-		
+		<a href="/myslate/create" class="current">Help</a>
 	</div>
-	
 	
 	<div class="container-fluid">
-		
-		
 	    
-		<div class="row-fluid">
-			<div class="span9">
+	<div class="row-fluid">
+		<div class="span9">
+			<div class="widget-box">
+				<div class="widget-title">
+					<span class="icon"> <i class="icon-align-justify"></i>
+					</span>
+					<h5>Detailed descriptions, definitions and questions from other users. </h5>
+				</div>
+				<div class="widget-content nopadding">
+					<table class="table">
+						<tr>
+							<th>Topic</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<th>Project Title</th>
+							<th>Don't worry if you don't have the perfect title yet.  These things can and often will change throughout development and production.  For now, your project title will not affect any of the financial metrics, and is for tracking purposes only.</th>
+						</tr>
+						<tr>
+							<th>Log Line</th>
+							<th>One line summary of a screenplay.  This is another item that you will be constantly editing throughout the life of your project.  Summarizing your entire project in one sentence is a great exercise that will help you focus your direction, resources and marketing message to your team, investors, distributors and sales agents. </th>
+						</tr>
+
+					</table>
+
 			
-
-
-<div class="widget-box">
-	<div class="widget-title">
-		<span class="icon"> <i class="icon-align-justify"></i>
-		</span>
-		<h5>Tell us more about your project.  
-		<a href="/myslate"><id="fqAsterisk">*</id>More...</a></h5>
-	</div>
-	<div class="widget-content nopadding">
-		<form class="form-horizontal" method="post" action="/myslate/create"
-			id="createForm" novalidate="novalidate">
-			<div class="control-group">
-				<label class="control-label" for="title">Log Line </label>
-				<div class="controls" >
-					<input type="text" id="disabledInput" name="title" id="title" value="" />
 				</div>
 			</div>
-			<div class="control-group">
-				<label class="control-label" for="title">Synopsis </label>
-				<div class="controls">
-					<textarea rows="" cols="" id="sendRequestContents" name="sendRequestContents"></textarea>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label" for="descriptiveTags">Descriptive Tags </label>
-				<div class="controls">
-					<input type="text" id="disabledInput" name="title" id="title" value="" />
-				</div>
-			</div>
-
-			<div class="form-actions">
-				<button class="btn btn-success" style="width: 160px; height: 40px"
-					id="createBtn">Save</button>
-			</div>
-		</form>
-	</div>
-</div>
 			</div>
 			<div class="span3">
 			
