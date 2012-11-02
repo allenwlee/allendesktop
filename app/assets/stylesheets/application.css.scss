@@ -1,9 +1,16 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+$fqYellow: #FACC2E;
+$fqLightBlue: #0088cc;
+
+.control-label {
+	border-bottom: 1px dotted $fqLightBlue;
+	}
+
 
 .accordion-inner {
-	background-color: #FACC2E;
+	background-color: $fqYellow;
 	}
 	
 
@@ -14,7 +21,7 @@
 
 body#splashPage {
 	padding-top: 5%;
-	background-color: #FACC2E;
+	background-color: $fqYellow;
 	}
 
 body#product {
