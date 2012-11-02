@@ -2,12 +2,15 @@
 @import "bootstrap-responsive";
 
 
-.fqDescriptions {
+.accordion-inner {
+	background-color: #FACC2E;
+	}
+	
+
+.fqTypeface {
 	font-family:"Times New Roman",Georgia,Serif;
-	font-size: 1em;
-	line-height: .2em;
-	display: inline;
-	letter-spacing: -.05em;
+	letter-spacing: -.01em;
+	}
 
 body#splashPage {
 	padding-top: 5%;
@@ -21,7 +24,7 @@ body#product {
 	}
 
 	
-.container {
+.container { 
 	
 	}
 
@@ -31,6 +34,8 @@ body#product {
 
 .fqAsterisk {
 	color:white;
+	font-size: 125%;
+	display: inline;
 	}
 
 .form-actions {
