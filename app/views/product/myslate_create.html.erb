@@ -97,7 +97,7 @@
 					<input type="text" name="title" id="title" value="" />
 				</div>
 			</div>
-			<div id="collapseOne" class="accordion-body collapse in">
+			<div id="collapseOne" class="accordion-body collapse">
 				<div class="accordion-inner">
 				  <div class="fqAsterisk">*</div>
 				  <p class="fqTypeface">
@@ -108,8 +108,9 @@
 
 <!--create button-->
 			<div class="form-actions">
-				<button class="btn" style="width: 160px; height: 40px"
-					id="createBtn">Create</button>
+				<div class="btn btn-success" style="width: 160px; height: 40px">
+					<%= link_to "Create", myslate_create2_path %>
+				</div>
 			</div>
 		</form>
 	</div>
@@ -144,7 +145,7 @@
 
 			<div class="form-actions">
 				
-				<span id="sendRequestWrap" class="pull-right"><button class="btn btn-success" id="sendRequestBtn">Send</button></span>
+				<span id="sendRequestWrap" class="pull-right"><button class="btn btn-info" id="sendRequestBtn">Send</button></span>
                 <span class="pull-right" style="display:none" id="sendRequestLoadingWrap"><img src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span>
 			</div>
 			<input type="hidden" name="sendRequestUrl" id="sendRequestUrl" value='/myslate/create' />
