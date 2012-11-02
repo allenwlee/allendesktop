@@ -4,6 +4,7 @@ Allendesktop::Application.routes.draw do
   match '/index', to: 'splashpage#index'
   match '/myslate', to: 'product#myslate'
   match '/myslate/create', to: 'product#myslate_create'
+  match '/myslate/create2', to: 'product#myslate_create2'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

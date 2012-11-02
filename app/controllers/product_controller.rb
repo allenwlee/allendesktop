@@ -3,6 +3,10 @@ class ProductController < ApplicationController
   end
 
   def myslate_create
-  end
+  end 
+
+  def myslate_create2
+  end 
+
 
 end

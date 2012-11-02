@@ -57,7 +57,7 @@
 
     	
 	<div id="content-header">
-		<h1>Let's get started!</h1>
+		<h1>Outline</h1>
 	</div>
 	
 	
@@ -84,29 +84,35 @@
 	<div class="widget-title">
 		<span class="icon"> <i class="icon-align-justify"></i>
 		</span>
-		<h5>Name your project.</h5><h6>All great films start off with a working title.<a href="/myslate"><id="fqAsterisk">*</id>More...</a></h6>
+		<h5>Tell us more about your project.</h5><h6><a href="/myslate"><id="fqAsterisk">*</id>More...</a></h6>
 	</div>
 	<div class="widget-content nopadding">
 		<form class="form-horizontal" method="post" action="/myslate/create"
 			id="createForm" novalidate="novalidate">
 			<div class="control-group">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-					<label class="control-label" for="title">Project Title* </label>
-				</a>
+				
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="title">Genres </label>
 				<div class="controls">
 					<input type="text" name="title" id="title" value="" />
 				</div>
 			</div>
-			<div id="collapseOne" class="accordion-body collapse in">
-				<div class="accordion-inner", "fqDescriptions">
-				  Don't worry if you don't have the perfect title yet.  These things can and often will change throughout development and production.  For now, your project title will not affect any of the financial metrics, and is for tracking purposes only.
+			<div class="control-group">
+				<label class="control-label" for="title">Log Line </label>
+				<div class="controls">
+					<input type="text" name="title" id="title" value="" />
+				</div>
 			</div>
-		</div>
-
-<!--create button-->
+			<div class="control-group">
+				<label class="control-label" for="title">Synopsis </label>
+				<div class="controls">
+					<textarea rows="" cols="" id="sendRequestContents" name="sendRequestContents"></textarea>
+				</div>
+			</div>
 			<div class="form-actions">
 				<button class="btn" style="width: 160px; height: 40px"
-					id="createBtn">Create</button>
+					id="createBtn">Save</button>
 			</div>
 		</form>
 	</div>
