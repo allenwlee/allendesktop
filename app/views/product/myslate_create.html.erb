@@ -15,6 +15,7 @@
 <script src="http://external.filmquotra.com/assets/res/js/send_request.js"></script>
 </head>
 <body>
+
 	
 
 		<div id="header">
@@ -100,17 +101,28 @@
 			</div>
 			<div id="collapseOne" class="accordion-body collapse">
 				<div class="accordion-inner">
-				  <div class="fqAsterisk">*</div>
-				  <p class="fqTypeface">
-					 Don't worry if you don't have the perfect title yet.  These things can and often will change throughout development and production.  For now, your project title will not affect any of the financial metrics, and is for tracking purposes only.
-				 </p>
+					<div class="row-fluid">
+						<div class="span12">
+							<p class="fqTypeface">
+								 <a class="fqAsterisk">*</a>Don't worry if you don't have the perfect title yet.  These things can and often will change throughout development and production.   For now, your project title will not affect any of the financial metrics, and is for tracking purposes only.
+							</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span6">
+							<p class="fqTypeface">Learn more.</p>
+						</div>
+						<div class="span6">
+							<p class="fqTypeface">Add your 2 cents.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
 <!--create button-->
 			<div class="form-actions">
 				<div class="btn btn-success" style="width: 160px; height: 40px">
-					<%= link_to "Create", myslate_create2_path %>
+					<a href="/myslate/create2">Create</a>
 				</div>
 			</div>
 		</form>
@@ -199,5 +211,8 @@
 			s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
+
+
+
 </body>
 </html>

@@ -8,5 +8,7 @@ class ProductController < ApplicationController
   def myslate_create2
   end 
 
+  def myslate_twitter
+  end 
 
 end
