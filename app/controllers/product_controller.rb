@@ -11,4 +11,7 @@ class ProductController < ApplicationController
   def myslate_twitter
   end 
 
+  def filmslate
+  end 
+
 end
