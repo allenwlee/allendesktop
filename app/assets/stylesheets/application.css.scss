@@ -13,10 +13,17 @@
 	    border-bottom: 1px solid rgb(214, 214, 214);
 	    padding-left: 10px;
 	}
-	
+
+.fqBox {
+	font-weight:normal;
+	margin:0;
+	font-family: Rockwell, Georgia, Serif;
+	-webkit-font-smoothing: always;
+	font-smooth:always;
+	}
 
 .fqTypeface {
-	font-family:"Times New Roman",Georgia,Serif;
+	font-family: Rockwell, Georgia, Serif;
 	letter-spacing: -.01em;
 	}
 
