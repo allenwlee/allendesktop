@@ -68,9 +68,11 @@ body#product {
 	}
 
 .fqAsterisk {
+	font-family: windsor1, "Times New Roman", Serif;
 	color:rgb(0, 176, 240);
 	font-size: 125%;
 	display: inline;
+	vertical-align: -25%;
 	}
 
 .form-actions {
@@ -97,20 +99,24 @@ body#product {
 
 #splashTitleArea h1 {
 	font-size: 5em;
+	line-height: 1em;
 	} 
 
 #splashTitleArea h3 {
 	font-size: 3em;
 	} 
 
-
-
 #splashTitleArea h4 {
+	font-size: 2em;
+	} 
+
+
+.butWereAfraid {
 	font-family: Arial,Verdana,Sans-serif;
 	font-size: 2em;
 	line-height: 1em;
 	display: inline;
-	font-variant:small-caps;
+	text-transform:uppercase;
 	
 	} 
 
