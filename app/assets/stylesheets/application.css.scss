@@ -2,10 +2,19 @@
 @import "bootstrap-responsive";
 
 @font-face {
-    font-family: DeliciousRoman;
-    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
-    font-weight:400;
-}
+	font-family: 'Alegreya';    
+	src: url('../fonts/Alegreya-Regular-webfont.eot');
+	src: url('../fonts/Alegreya-Regular-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/Alegreya-Regular-webfont.woff') format('woff'), 
+	     url('../fonts/Alegreya-Regular-webfont.ttf') format('truetype'), 
+	     url('../fonts/Alegreya-Regular-webfont.svg') format('svg') 
+	} 
+ 
+ /*   src: url('<%= asset_path('Alegreya-Regular-webfont.eot?#iefix') %>') format('embedded-opentype'), */
+/*	 url('<%= asset_path('Alegreya-Regular-webfont.woff') %>') format('woff'), */
+/*	 url('<%= asset_path('Alegreya-Regular-webfont.ttf') %>') format('truetype'), */
+/*	 url('<%= asset_path('Alegreya-Regular-webfont.svg') %>') format('svg') */
+
 
 
 .control-label {
@@ -29,13 +38,13 @@
 .fqBox {
 	font-weight:normal;
 	margin:0;
-	font-family: DeliciousRoman, Georgia, Serif;
+	font-family: Alegreya, "Times New Roman", Serif;
 	-webkit-font-smoothing: always;
 	font-smooth:always;
 	}
 
 .fqTypeface {
-	font-family: DeliciousRoman;
+	font-family: Alegreya;
 	letter-spacing: -.01em;
 	}
 
@@ -76,7 +85,7 @@ body#product {
 	} 
 
 #splashTitleArea h1 {
-	font-family:"Times New Roman",Georgia,Serif;
+	font-family: Alegreya, "Times New Roman", Serif;
 	font-size: 5em;
 	line-height: 1em;
 	display: inline;

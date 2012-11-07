@@ -55,7 +55,8 @@ module Allendesktop
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-	
+	config.assets.paths << Rails.roote.join("app", "assets", "fonts")
+#	config.assets.precompile += %w( .svg .eot .woff .ttf ) 
 
   end
 end
