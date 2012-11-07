@@ -3,18 +3,21 @@
 
 @font-face {
 	font-family: 'Alegreya';    
-	src: url('../fonts/Alegreya-Regular-webfont.eot');
-	src: url('../fonts/Alegreya-Regular-webfont.eot?#iefix') format('embedded-opentype'), 
-	     url('../fonts/Alegreya-Regular-webfont.woff') format('woff'), 
-	     url('../fonts/Alegreya-Regular-webfont.ttf') format('truetype'), 
-	     url('../fonts/Alegreya-Regular-webfont.svg') format('svg') 
-	} 
- 
- /*   src: url('<%= asset_path('Alegreya-Regular-webfont.eot?#iefix') %>') format('embedded-opentype'), */
-/*	 url('<%= asset_path('Alegreya-Regular-webfont.woff') %>') format('woff'), */
-/*	 url('<%= asset_path('Alegreya-Regular-webfont.ttf') %>') format('truetype'), */
-/*	 url('<%= asset_path('Alegreya-Regular-webfont.svg') %>') format('svg') */
+	src: url(font-path('Alegreya-Regular-webfont.eot'));
+	src: url(font-path('Alegreya-Regular-webfont.eot?#iefix') + "?iefix") format('embedded-opentype'), 
+		url(font-path('Alegreya-Regular-webfont.woff')) format('woff'), 
+		url(font-path('Alegreya-Regular-webfont.ttf')) format('truetype'), 
+		url(font-path('Alegreya-Regular-webfont.svg')) format('svg')
+	}
 
+@font-face {
+	font-family: 'windsor1';    
+	src: url(font-path('windsor1-webfont.eot'));
+	src: url(font-path('windsor1-webfont.eot?#iefix') + "?iefix") format('embedded-opentype'), 
+		url(font-path('windsor1-webfont.woff')) format('woff'), 
+		url(font-path('windsor1-webfont.ttf')) format('truetype'), 
+		url(font-path('windsor1-webfont.svg')) format('svg')
+	}
 
 
 .control-label {
@@ -38,13 +41,13 @@
 .fqBox {
 	font-weight:normal;
 	margin:0;
-	font-family: Alegreya, "Times New Roman", Serif;
+	font-family: windsor1, "Times New Roman", Serif;
 	-webkit-font-smoothing: always;
 	font-smooth:always;
 	}
 
 .fqTypeface {
-	font-family: Alegreya;
+	font-family: windsor1;
 	letter-spacing: -.01em;
 	}
 
@@ -85,7 +88,7 @@ body#product {
 	} 
 
 #splashTitleArea h1 {
-	font-family: Alegreya, "Times New Roman", Serif;
+	font-family: windsor1, "Times New Roman", Serif;
 	font-size: 5em;
 	line-height: 1em;
 	display: inline;
@@ -93,7 +96,7 @@ body#product {
 	} 
 
 #splashTitleArea h4 {
-	font-family:"Times New Roman",Georgia,Serif;
+	font-family:windsor1,Georgia,Serif;
 	font-size: 2em;
 	line-height: 1em;
 	display: inline;
