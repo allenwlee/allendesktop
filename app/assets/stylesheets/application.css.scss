@@ -53,7 +53,7 @@
 
 body#splashPage {
 	padding-top: 5%;
-	background-color: white;
+	background-color: black;
 	}
 
 body#product {
@@ -85,18 +85,28 @@ body#product {
 #splashTitleArea {
 	padding: 1.5em;
 	text-align: center;
+	color: white;
+	} 
+
+#splashTitleArea {
+	font-family: windsor1, "Times New Roman", Serif;
+	line-height: 1em;
+	display: inline;
+	letter-spacing: -.02em;
 	} 
 
 #splashTitleArea h1 {
-	font-family: windsor1, "Times New Roman", Serif;
 	font-size: 5em;
-	line-height: 1em;
-	display: inline;
-	letter-spacing: -.05em;
 	} 
 
+#splashTitleArea h3 {
+	font-size: 3em;
+	} 
+
+
+
 #splashTitleArea h4 {
-	font-family:windsor1,Georgia,Serif;
+	font-family: Arial,Verdana,Sans-serif;
 	font-size: 2em;
 	line-height: 1em;
 	display: inline;
@@ -108,8 +118,8 @@ body#product {
 	margin: 10%;
 	border-radius: 5%;
 	padding: 20px;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	}
 
 
