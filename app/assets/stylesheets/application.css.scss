@@ -84,6 +84,8 @@ body#product {
     
     }
 
+
+
 #splashTitleArea {
 	padding: 1.5em;
 	text-align: center;
@@ -95,7 +97,13 @@ body#product {
 	line-height: 1em;
 	display: inline;
 	letter-spacing: -.02em;
-	} 
+	}
+#splashTitleArea {
+	a:link {color:white;}      /* unvisited link */
+	a:visited {color:grey;}  /* visited link */
+	a:hover {color:rgb(0, 176, 240);}  /* mouse over link */
+	a:active {color:#0000FF;}  /* selected link */ 
+	}
 
 #splashTitleArea h1 {
 	font-size: 5em;
