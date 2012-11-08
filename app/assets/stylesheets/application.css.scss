@@ -48,7 +48,8 @@
 
 .fqTypeface {
 	font-family: windsor1;
-	letter-spacing: -.01em;
+	-webkit-font-smoothing: subpixel-antialiased;
+
 	}
 
 body#splashPage {
@@ -99,10 +100,13 @@ body#product {
 	letter-spacing: -.02em;
 	}
 #splashTitleArea {
-	a:link {color:white;}      /* unvisited link */
-	a:visited {color:grey;}  /* visited link */
-	a:hover {color:rgb(0, 176, 240);}  /* mouse over link */
-	a:active {color:#0000FF;}  /* selected link */ 
+	a:link {color:white;
+		border-bottom: 1px dotted rgb(214, 214, 214);
+		}
+	a:visited {color:grey;}
+	a:hover {color:rgb(0, 176, 240);
+		}
+	a:active {color:#0000FF;}
 	}
 
 #splashTitleArea h1 {
@@ -129,6 +133,7 @@ body#product {
 	} 
 
 #splashRegister {
+	text-align: center;
 	margin: 10%;
 	border-radius: 5%;
 	padding: 20px;
