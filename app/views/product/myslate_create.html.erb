@@ -35,6 +35,7 @@
 		</div>
 	</div>	
 <!-- Modal end -->
+
 	<div id="header">
 		<h1><a href="/">filmquotra</a></h1>		
 	</div>
@@ -103,6 +104,7 @@
 									<input type="text" name="title" id="title" value="" />
 								</div>
 							</div>
+<!--quotraBox start-->
 							<div class="quotraBox">
 								<div id="collapseProjectTitle" class="accordion-body collapse">
 									<div class="accordion-inner">
@@ -124,11 +126,30 @@
 												<a href="../help#projectTitle">Like.</a><span class="likeCount">+10</span>
 											</div>
 											<div class="span4">
-												<input class="linkLabel" type="text" name="title" id="title" value="Comment" />
+												<input class="linkLabel" type="text" name="title" id="title" value="Comment" a href="#quotraBoxModal" data-toggle="modal" />
+												
 											</div>
 										</div>
 									</div>
 							</div>
+<!--quotraBox end-->
+
+<!-- Modal begin-->
+<div id="quotraBoxModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 class="fqTypeface">Thanks!</h2>
+	</div>
+	<h5 div class="modal-body">
+		<ul>
+			<li>We are reading your comment and question and will address it as soon as possible.
+		</ul>
+	</h5>
+	<div class="modal-footer" style="text-align:center">
+		<button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>	
+<!-- Modal end -->
 
 							<!--create button-->
 							<div class="form-actions">
