@@ -14,4 +14,8 @@ class ProductController < ApplicationController
   def filmslate
   end 
 
+  def myslate_ultimate
+  end 
+
+
 end

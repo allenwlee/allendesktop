@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>filmquotra</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="http://static.filmquotra.com/assets/res/css/filmquotra.min.css" type="text/css" rel="stylesheet" />
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="http://static.filmquotra.com/assets/res/js/lib.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/filmquotra.min.js"></script>
+<script src="http://external.filmquotra.com/assets/res/js/validation.js"></script>
+<script src="http://external.filmquotra.com/assets/res/js/send_request.js"></script>
+</head>
+<body>
+	<div id="header">
+			<h1><a href="/">filmquotra</a></h1>		
+		</div>
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group">
+                <li class="btn btn-inverse"><a title="" href="/profile/changepassword"><i class="icon icon-user"></i> <span class="text">Profile</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="/logout"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+            </ul>
+        </div>
+            
+		<div id="sidebar">
+		<a href="/myslate/ultimates" class="visible-phone"><i
+					class="icon icon-th-list"></i>Ultimates</a>
+			<ul>
+				<li ><a href="/myslate/"><i class="icon icon-home"></i> <span>MySlate</span></a></li>
+				<li ><a href="/myslate/create"><i class="icon icon-plus-sign"></i> <span>Create Project</span></a></li>
+				<li ><a href=""><i class="icon icon-question-sign"></i> <span>Comps</span></a></li>
+				<li class="active"><a href=""><i class="icon icon-info-sign"></i> <span>Ultimates</span></a></li>
+			</ul>
+		</div>
+
+
+
+
+
+
+<div id="content">
+		<div id="content-header">
+			<h1>Ultimates</h1>
+		</div>
+		<div id="breadcrumb">
+				<a href="/" title="Go to Home" class="tip-bottom"><i
+					class="icon-home"></i> Home</a>
+				<a href="/ultimates" class="current">Ultimates</a>
+						</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+						<div class="span9">
+							<style>
+.negative {
+	color:red;
+}
+.mtitle {
+	font-weight:bold;
+}
+
+tr .sum {
+	border-top:3px solid #DDDDDD;
+}
+.bar p {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.alert-grey {
+    background-color: #ededed;
+    border-color: #d9d9d9;
+    color: #242424;
+}
+.normal {
+    color: #242424;
+    text-decoration: none;
+}
+tr .numbershow {
+    text-align:right;
+}
+</style>
+<div class="widget-box">
+	<div class="widget-title">
+		<span class="icon">
+			<i class="icon-th"></i>
+		</span>
+		<h5>Static table</h5>
+	</div>
+	<div class="widget-content nopadding">
+	<article>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Summary Projections</th>
+					<th>OUR DATA ESTIMATE</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mtitle">Worldwide Box Office</td>
+					<td class="numbershow">$519,730,763</td>
+				</tr>
+				
+				<tr>
+					<td class="mtitle sum">Worldwide Revenue</td>
+					<td class="sum"><!--  --></td>
+				</tr>
+				<tr>
+					<td> - Theatrical &nbsp; Non-theatrical</td>
+					<td class="numbershow">$265,062,689</td>
+				</tr>
+				<tr>
+					<td> - DVD (Gross)</td>
+					<td class="numbershow">$405,389,995</td>
+				</tr>
+				<tr>
+					<td> - Pay TV</td>
+					<td class="numbershow">$67,564,999</td>
+				</tr>
+				<tr>
+					<td> - Free TV</td>
+					<td class="numbershow">$83,156,922</td>
+				</tr>
+				<tr>
+					<td> - New Media</td>
+					<td class="numbershow">$25,986,538</td>
+				</tr>
+				<tr>
+					<td class="mtitle sum">Worldwide Costs</td>
+					<td class="sum"><!--  --></td>
+				</tr>
+				<tr>
+					<td> - Budget</td>
+					<td class="numbershow negative">($100,000,000)</td>
+				</tr>
+				<tr>
+					<td> - P&nbsp;A</td>
+					<td class="numbershow negative">($181,905,767)</td>
+				</tr>
+				<tr>
+					<td> - Other Costs</td>
+					<td class="numbershow negative">($161,116,536)</td>
+				</tr>
+				<tr>
+					<td class="mtitle sum">Worldwide Profit</td>
+					<td class="numbershow sum">$404,138,840</td>
+					   </tr>
+			</tbody>
+		</table>
+	</article>
+	</div>
+</div>
+</div>
+						<div class="span3">
+							<div class="widget-box">
+	<div class="widget-title">
+		<span class="icon">
+			<i class=" icon-question-sign"></i>
+		</span>
+		<h5>Ask us anything!</h5>
+	</div>
+	<div class="widget-content nopadding">
+		<form class="form-horizontal" method="post" action=""
+			id="sendRequestForm" novalidate="novalidate">
+			<div class="control-group">
+				<!-- <label class="control-label" for="sendRequestTitle">Title</label> -->
+				<div class="controls" style="margin-left:35px">
+					<input type="text" name="sendRequestTitle" id="sendRequestTitle" value="" />
+				</div>
+			</div>
+			<div class="control-group">
+				<!-- <label class="control-label" for="sendRequestContents">Contents</label> -->
+				<div class="controls" style="margin-left:35px">
+					<textarea rows="" cols="" id="sendRequestContents" name="sendRequestContents"></textarea>
+				</div>
+			</div>
+			<input type="hidden" name="sendRequestUrl" id="sendRequestUrl" value='/ultimates/my/t3533520' />
+			<div class="form-actions">
+				
+				<span id="sendRequestWrap" class="pull-right"><button class="btn btn-info" id="sendRequestBtn">Send</button></span>
+                <span class="pull-right" style="display:none" id="sendRequestLoadingWrap"><img src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span>
+			</div>
+			
+			
+		</form>
+	</div>
+</div>
+
+</div>
+					</div>
+				<div class="row-fluid">
+				<div id="footer" class="span12"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer-inner">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						&copy; 2012 <a href="http://filmquotra.com">filmquotra</a>.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-32128189-1' ]);
+		_gaq.push([ '_setDomainName', 'filmquotra.com' ]);
+		_gaq.push([ '_trackPageview' ]);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>

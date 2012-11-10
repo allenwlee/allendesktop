@@ -7,6 +7,7 @@ Allendesktop::Application.routes.draw do
   match '/filmslate', to: 'product#filmslate'
   match '/myslate/create', to: 'product#myslate_create'
   match '/myslate/create2', to: 'product#myslate_create2'
+  match '/myslate/ultimate', to: 'product#myslate_ultimate'
   match '/myslate/twitter', to: 'product#myslate_twitter'
   match '/help', to: 'helppage#help1'
 
