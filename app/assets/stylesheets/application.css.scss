@@ -19,6 +19,42 @@
 		url(font-path('windsor1-webfont.svg')) format('svg')
 	}
 
+@font-face {
+	font-family: 'Pacifico';    
+	src: url(font-path('Pacifico-webfont.eot'));
+	src: url(font-path('Pacifico-webfont.eot?#iefix') + "?iefix") format('embedded-opentype'), 
+		url(font-path('Pacifico-webfont.woff')) format('woff'), 
+		url(font-path('Pacifico-webfont.ttf')) format('truetype'), 
+		url(font-path('Pacifico-webfont.svg')) format('svg')
+	}
+
+ul.asteriskList {
+	li:before {
+		content: "*";
+		}
+	}
+ 
+
+blockquote {
+	    padding: 20px 0 0 0;
+	    overflow: hidden; /* clearfix alternative */
+	    line-height: 150%;
+	    border-left: none;
+
+	}
+	blockquote:before {
+	    display: block;
+	    float: left;
+	    margin: 0 15px 0 0;
+	    font-size: 150%; /* let's make it a big quote! */
+	    content: "*"; 
+	    text-shadow: 0 1px 1px #909090;
+	}
+	blockquote:after {
+	    content: none;
+	}
+
+
 
 .control-label {
 	border-bottom: 1px dotted #0088cc;
