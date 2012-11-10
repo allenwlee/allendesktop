@@ -78,12 +78,19 @@ blockquote {
 		text-align: center;
 		}
 
+
+
+
 .linkLabel {
 		font-size: 1.25em;
 		font-family: Pacifico, Georgia, Serif;
 		text-align: center;
 		text-shadow: 0px 1px 0px lightgray;
 		}
+
+.widget-box .linkLabelInput {
+	width: 100px;
+	}
 
 .fqTypeface {
 	font-family: windsor1;
