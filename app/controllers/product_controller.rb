@@ -17,5 +17,7 @@ class ProductController < ApplicationController
   def myslate_ultimate
   end 
 
+  def myslate_comps
+  end 
 
 end
