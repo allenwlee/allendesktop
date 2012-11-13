@@ -20,4 +20,10 @@ class ProductController < ApplicationController
   def myslate_comps
   end 
 
+  def myslate_comps_direct
+  end 
+
+  def myslate_comps_talent
+  end 
+
 end

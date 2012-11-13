@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>filmquotra</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="http://static.filmquotra.com/assets/res/css/filmquotra.min.css" type="text/css" rel="stylesheet" />
+<link href="http://static.filmquotra.com/assets/res/css/uniform.css" type="text/css" rel="stylesheet" />
+<link href="http://static.filmquotra.com/assets/res/css/jquery.ui.bootstrap.css" type="text/css" rel="stylesheet" />
+<link href="http://static.filmquotra.com/assets/res/css/chosen.css" type="text/css" rel="stylesheet" />
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="http://static.filmquotra.com/assets/res/js/lib.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/filmquotra.min.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/jquery.uniform.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/jquery.chosen.js"></script>
+<script src="http://external.filmquotra.com/assets/res/js/validation.js"></script>
+<script src="http://external.filmquotra.com/assets/res/js/comps/talent.js"></script>
+<script src="http://external.filmquotra.com/assets/res/js/send_request.js"></script>
+</head>
+<body>
+	<div id="header">
+			<h1><a href="/">filmquotra</a></h1>		
+		</div>
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group">
+                <li class="btn btn-inverse"><a title="" href="/profile/changepassword"><i class="icon icon-user"></i> <span class="text">Profile</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="/logout"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+            </ul>
+        </div>
+            
+		<div id="sidebar">
+		<a href="/myslate/comps" class="visible-phone"><i
+					class="icon icon-th-list"></i>Comps</a>
+			<ul>
+				<li ><a href="/myslate/"><i class="icon icon-home"></i> <span>MySlate</span></a></li>
+				<li ><a href="/myslate/create"><i class="icon icon-plus-sign"></i> <span>Create Project</span></a></li>
+				<li class="active"><a href=""><i class="icon icon-question-sign"></i> <span>Comps</span></a></li>
+				<li ><a href=""><i class="icon icon-info-sign"></i> <span>Ultimates</span></a></li>
+			</ul>
+		</div>
+
+
+
+
+
+
+<div id="content">
+		<div id="content-header">
+			<h1>Talent comps</h1>
+		</div>
+		<div id="breadcrumb">
+				<a href="/" title="Go to Home" class="tip-bottom"><i
+					class="icon-home"></i> Home</a>
+				<a href="/myslate">Project</a>
+						<a href="/myslate/s0491632/comps">Comps</a>
+						<a href="/myslate/s0491632/comps/talent" class="current">Talent</a>
+						</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+						<div class="span9">
+							<style>
+.thumbnails .actions {
+	width: 32px;
+	height: 16px;
+	background-color: #000000;
+	padding: 5px 8px;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -24px;
+	opacity: 0;
+	-moz-transition: opacity 0.3s ease-in-out;
+}
+</style>
+<div class="widget-box">
+	<div class="widget-title">
+		<span class="icon"> <i class="icon-align-justify"></i>
+		</span>
+		<h5>Project your project.</h5>
+	</div>
+	<div class="widget-content nopadding">
+		<form class="form-horizontal" method="post"
+			action="/myslate/s0491632/comps/list" id="talentCompsForm"
+			novalidate="novalidate">
+			<div class="control-group">
+				<label class="control-label" for="compsname">Comps Name *</label>
+				<div class="controls">
+					<input type="text" name="compsname" id="compsname"
+						placeholder="Comps Name">
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="talent">Talent *</label>
+				<div class="controls">
+					<input type="text" name="talentsearch" id="talentsearch" placeholder="Search Talent">
+					
+					<input type="hidden" name="talent" id="talent" />
+				</div>
+				<div class="controls" id="talentResult">
+					
+				</div>
+				
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label" for="genre">Genre(s)</label>
+				<div class="controls">
+					<select id="genre" name="genre" data-placeholder="Search Genre"
+						title="Search Genre" multiple>
+						<option value="28">Action</option>
+						<option value="12">Adventure</option>
+						<option value="16">Animation</option>
+						<option value="35">Comedy</option>
+						<option value="80">Crime</option>
+						<option value="105">Disaster</option>
+						<option value="99">Documentary</option>
+						<option value="18">Drama</option>
+						<option value="82">Eastern</option>
+						<option value="2916">Erotic</option>
+						<option value="10751">Family</option>
+						<option value="10750">Fan Film</option>
+						<option value="14">Fantasy</option>
+						<option value="10753">Film Noir</option>
+						<option value="10769">Foreign</option>
+						<option value="36">History</option>
+						<option value="10595">Holiday</option>
+						<option value="27">Horror</option>
+						<option value="10756">Indie</option>
+						<option value="10402">Music</option>
+						<option value="22">Musical</option>
+						<option value="9648">Mystery</option>
+						<option value="10754">Neo-noir</option>
+						<option value="1115">Road Movie</option>
+						<option value="10749">Romance</option>
+						<option value="878">Science Fiction</option>
+						<option value="10755">Short</option>
+						<option value="9805">Sport</option>
+						<option value="10758">Sporting Event</option>
+						<option value="10757">Sports Film</option>
+						<option value="10748">Suspense</option>
+						<option value="10770">TV movie</option>
+						<option value="53">Thriller</option>
+						<option value="10752">War</option>
+						<option value="37">Western</option>
+					</select>
+				</div>
+			</div>
+						
+			<input type="hidden" name="credits" id="credits" />
+			<div class="form-actions">
+				<button class="btn span2" type="submit" id="nextBtn">Next</button>
+			</div>
+			<div id="loadingModal" class="modal hide smallmodal">
+				<div class="modal-body">
+					<p align="center"><img src="http://static.filmquotra.com/assets/res/img/loader.gif" /></p>
+					<p align="center">processing..</p>
+				</div>
+			</div>
+		</form>
+		<div style="display:none;"><img src="http://static.filmquotra.com/assets/res/img/holder.gif" width="0px" height="0px"></div>
+	</div>
+</div>
+</div>
+						<div class="span3">
+							<div class="widget-box">
+	<div class="widget-title">
+		<span class="icon">
+			<i class=" icon-question-sign"></i>
+		</span>
+		<h5>Ask us anything!</h5>
+	</div>
+	<div class="widget-content nopadding">
+		<form class="form-horizontal" method="post" action=""
+			id="sendRequestForm" novalidate="novalidate">
+			<div class="control-group">
+				<!-- <label class="control-label" for="sendRequestTitle">Title</label> -->
+				<div class="controls" style="margin-left:35px">
+					<input type="text" name="sendRequestTitle" id="sendRequestTitle" value="" />
+				</div>
+			</div>
+			<div class="control-group">
+				<!-- <label class="control-label" for="sendRequestContents">Contents</label> -->
+				<div class="controls" style="margin-left:35px">
+					<textarea rows="" cols="" id="sendRequestContents" name="sendRequestContents"></textarea>
+				</div>
+			</div>
+			<input type="hidden" name="sendRequestUrl" id="sendRequestUrl" value='/myslate/s0491632/comps/talent' />
+			<div class="form-actions">
+				
+				<span id="sendRequestWrap" class="pull-right"><button class="btn btn-info" id="sendRequestBtn">Send</button></span>
+                <span class="pull-right" style="display:none" id="sendRequestLoadingWrap"><img src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span>
+			</div>
+			
+			
+		</form>
+	</div>
+</div>
+
+</div>
+					</div>
+				<div class="row-fluid">
+				<div id="footer" class="span12"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer-inner">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						&copy; 2012 <a href="http://filmquotra.com">filmquotra</a>.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-32128189-1' ]);
+		_gaq.push([ '_setDomainName', 'filmquotra.com' ]);
+		_gaq.push([ '_trackPageview' ]);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>

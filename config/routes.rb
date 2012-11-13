@@ -9,6 +9,8 @@ Allendesktop::Application.routes.draw do
   match '/myslate/create2', to: 'product#myslate_create2'
   match '/ultimate', to: 'product#myslate_ultimate'
   match '/comps', to: 'product#myslate_comps'
+  match '/direct', to: 'product#myslate_comps_direct'
+  match '/talent', to: 'product#myslate_comps_talent'
   match '/myslate/twitter', to: 'product#myslate_twitter'
   match '/help', to: 'helppage#help1'
 

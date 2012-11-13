@@ -6,10 +6,17 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href="http://static.filmquotra.com/assets/res/css/filmquotra.min.css" type="text/css" rel="stylesheet" />
+<link href="http://static.filmquotra.com/assets//res/css/uniform.css" type="text/css" rel="stylesheet" />
+<link href="http://static.filmquotra.com/assets/res/css/jquery.ui.bootstrap.css" type="text/css" rel="stylesheet" />
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="http://static.filmquotra.com/assets/res/js/lib.js"></script>
 <script src="http://static.filmquotra.com/assets/res/js/filmquotra.min.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/jquery.uniform.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/jquery.masonry.min.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/jquery.capty.min.js"></script>
+<script src="http://static.filmquotra.com/assets/res/js/jail.min.js"></script>
 <script src="http://external.filmquotra.com/assets/res/js/validation.js"></script>
+<script src="http://external.filmquotra.com/assets/res/js/comps/direct.js"></script>
 <script src="http://external.filmquotra.com/assets/res/js/send_request.js"></script>
 </head>
 <body>
@@ -41,22 +48,84 @@
 
 <div id="content">
 		<div id="content-header">
-			<h1>Get Comps</h1>
+			<h1>Run your comparable films analysis here</h1>
 		</div>
 		<div id="breadcrumb">
 				<a href="/" title="Go to Home" class="tip-bottom"><i
 					class="icon-home"></i> Home</a>
 				<a href="/myslate">Project</a>
-						<a href="/myslate/s0491632/comps" class="current">Comps</a>
+						<a href="/myslate/s0491632/comps">Comps</a>
+						<a href="/myslate/s0491632/comps/direct" class="current">Direct</a>
 						</div>
 		<div class="container-fluid">
-		<h2>What the heck are "comps"?<span class="fqAsterisk">*</span></h2>
+		<h4>What <em>the bleep</em> are comps?<span class="fqAsterisk">*</span></h4>
 			<div class="row-fluid">
-				<div class="span9">
-					<ul class="site-stats">
-						<li class="comingSoon"><i class="icon-arrow-right"></i> <strong>Find Comps</strong> <small>Coming soon!</small></li>
-						<a href="/direct"><li class="current"><i class="icon-arrow-right"></i> <strong>Run Comps</strong></li></a>
-</ul></div>
+						<div class="span9">
+							<style>
+div.capty-caption {
+    background-color: #000000;
+    color: #FFFFFF;
+    font: bold 11px verdana;
+    padding-left: 10px;
+    padding-top: 7px;
+    text-shadow: 1px 1px 0 #222222;
+}
+div.capty-caption a {
+    color: #318DAD;
+    font: bold 11px verdana;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+</style>
+<div class="widget-box">
+	<div class="widget-title">
+		<span class="icon">
+			<i class="icon-align-justify"></i>									
+		</span>
+		<h5>Enter the films most comparable to your project.</h5>
+	</div>
+	<div class="widget-content nopadding">
+		<form class="form-horizontal" method="POST" action="/myslate/s0491632/comps/direct" id="directCompsForm" novalidate="novalidate">
+		<div class="control-group">
+			<label class="control-label" for="compsname">Comps
+				Name</label>
+			<div class="controls">
+				<input type="text" name="compsname" id="compsname"
+					placeholder="Comps Name">
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="films">Search Films</label>
+			<div class="controls">
+				<input type="text" name="films" id="films" placeholder="Search Films">
+			</div>
+		</div>
+		<div id="filmsResult" style="padding:5px;">
+			<div class="widget-box" style="margin-right:5px;width:185px;display:none;">
+			<div class="widget-title">
+				<span class="icon"><a data-src="0" class="close" href="">×</a></span>
+				<h5>title</h5>
+			</div>
+			<div class="widget-content nopadding">
+			<div>
+	        <img class="poster" name="#poster-target-0" src="http://static.filmquotra.com/assets/res/img/holder.gif" data-src="http://static.filmquotra.com/assets/res/img/holder.gif" alt="">
+	        <div id="poster-target-0">
+			  <span>label</span><br/>
+			</div> 
+			</div>
+			</div>
+		</div>
+		</div>
+		<input type="hidden" name="filmcomps" id="filmcomps" />
+		<div class="form-actions">
+			<button class="btn span2" type="submit" id="nextBtn">Next</button>
+		</div>
+        </form>
+	</div>
+</div>	
+</div>
 						<div class="span3">
 							<div class="widget-box">
 	<div class="widget-title">
@@ -80,7 +149,7 @@
 					<textarea rows="" cols="" id="sendRequestContents" name="sendRequestContents"></textarea>
 				</div>
 			</div>
-			<input type="hidden" name="sendRequestUrl" id="sendRequestUrl" value='/myslate/s0491632/comps' />
+			<input type="hidden" name="sendRequestUrl" id="sendRequestUrl" value='/myslate/s0491632/comps/direct' />
 			<div class="form-actions">
 				
 				<span id="sendRequestWrap" class="pull-right"><button class="btn btn-info" id="sendRequestBtn">Send</button></span>
