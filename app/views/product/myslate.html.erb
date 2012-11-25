@@ -1,429 +1,223 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-
+<title>filmquotra</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="http://static.filmquotra.com/assets/res/css/filmquotra.min.css" type="text/css" rel="stylesheet"/>
-<link href="http://static.filmquotra.com/assets//res/css/uniform.css" type="text/css" rel="stylesheet"/><link href="http://static.filmquotra.com/assets/res/css/chosen.css" type="text/css" rel="stylesheet"/>
+<link href="http://static.filmquotra.com/assets/res/css/filmquotra.min.css" type="text/css" rel="stylesheet" />
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="http://static.filmquotra.com/assets/res/js/lib.js"></script>
 <script src="http://static.filmquotra.com/assets/res/js/filmquotra.min.js"></script>
-<script src="http://static.filmquotra.com/assets/res/js/jquery.uniform.js"></script>
-<script src="http://static.filmquotra.com/assets/res/js/jquery.chosen.js"></script>
-<script src="http://static.filmquotra.com/assets/res/js/jquery.dataTables.min.js"></script>
-<script src="http://static.filmquotra.com/assets/res/js/unicorn.tables.js"></script>
-
-
-<script src="http://external.filmquotra.com/assets/res/js/send_request.js"></script>
+<link href="http://external.filmquotra.com/assets//res/css/myslate.css" type="text/css" rel="stylesheet">
+<script src="http://external.filmquotra.com/assets/res/js/sendRequest.js"></script>
 </head>
 <body>
-	
-
-		<div id="header">
+	<div id="header">
 			<h1><a href="/">filmquotra</a></h1>		
 		</div>
 		<div id="user-nav" class="navbar navbar-inverse">
             <ul class="nav btn-group">
-                
-				<li class="btn btn-inverse"><a title="" href="/profile/changepassword"><i class="icon icon-user"></i> <span class="text">Profile</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="/profile/changepassword"><i class="icon icon-user"></i> <span class="text">Profile</span></a></li>
                 <li class="btn btn-inverse"><a title="" href="/logout"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
             </ul>
         </div>
             
 		<div id="sidebar">
-				<a href="/myslate" class="visible-phone"><i
+		<a href="/myslate" class="visible-phone"><i
 					class="icon icon-th-list"></i>MySlate</a>
-		<ul>
-				<li class="active"><a href="/myslate/"><i class="icon icon-home"></i> <span>MySlate</span></a></li>
-				<li ><a href="/myslate/create"><i class="icon icon-home"></i> <span>Create Project</span></a></li>
-				<li ><a href=""><i class="icon icon-home"></i> <span>Comps</span></a></li>
-				<li ><a href="/ultimate"><i class="icon icon-home"></i> <span>Ultimates</span></a></li>
-				<li ><a href="/help"><i class="icon-question-sign"></i> <span>Help</span></a></li>
-			</ul>
-		</div>
-
-	<div id="content">
-
-	<div id="content-header">
-		<h1>My Slate</h1>
-	</div>
-	
-	<div id="breadcrumb">
-		<a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-		
-	</div>
-	
-	
-	<div class="container-fluid">
-		
-		<div class="row-fluid">
-			<div class="span12">
-
-
-<div class="widget-box">
-	<div class="widget-title">
-			<div class="control-group">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseMySlate">
-					Project<span class="fqAsterisk">*</span>
-				</a>
-				<span class="label label-info" style="float:left">8</span>
-			</div>
-	</div>
-		<div class="buttons" style="margin:4px;">
-			<a title="create" class="btn btn-danger" style="width:40px" href="/myslate/create">Create</a>
-		</div>
-
-	</div>
-
-	
-<!--quotraBox start-->
-	<div class="quotraBox">
-		<div id="collapseMySlate" class="accordion-body collapse">
-			<div class="accordion-inner">
-				<div class="row-fluid">
-					<div class="span8">
-						<ul>
-							<li class="asteriskList">This is your list, or "slate", of all your film projects.  Add any idea, finished screenplays, live projects, projects on hold, even  projects here.  Remember, it's not a real idea until you get it down on (electronic) paper!</li>
-						</ul>
-					</div>
-					<div class="span4">
-						<span class="fqAsterisk">*</span>Fun Fact:  The working title for <i>Pulp Fiction (1994)</i> was "Black Mask"&#8212;named after the seminal hardboiled crime fiction magazine.
-					</div>
-				</div>
-				<div class="row-fluid linkLabel">
-					<div class="span4">
-						<a href="../help#projectTitle">Learn more.</a>
-					</div>
-					<div class="span4">
-						<a href="#">Like.</a><span class="likeCount">+10</span>
-					</div>
-					<div class="span4">
-						<input class="linkLabel" type="text" name="title" id="title" value="Comment" a href="#quotraBoxModal" data-toggle="modal" />
-						
-					</div>
-				</div>
-			</div>
-	</div>
-
-
-	<!-- Modal start-->
-	<div id="quotraBoxModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h2 class="fqTypeface">Thanks...</h2>
-		</div>
-		<h5 div class="modal-body">
 			<ul>
-				<li>We are reading your comment and question and will address it as soon as possible!
+				<li class="active"><a href="/myslate/"><i class="icon icon-home"></i> <span>MySlate</span></a></li>
+				<li ><a href="/myslate/create"><i class="icon icon-plus-sign"></i> <span>Create Project</span></a></li>
+				<li ><a href="/comps"><i class="icon icon-question-sign"></i> <span>Comps</span></a></li>
+				<li ><a href="/"><i class="icon icon-info-sign"></i> <span>Ultimates</span></a></li>
+				<li ><a href=""><i class="icon icon-info-sign"></i> <span>State Incentive</span></a></li>
+				<li ><a href="/help"><i class="icon icon-question-sign"></i> <span>Help</span></a></li>
 			</ul>
-		</h5>
-		<div class="modal-footer" style="text-align:center">
-			<button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Close</button>
-			</div>
-		</div>	
-	<!-- Modal end -->
-<!--quotraBox end-->
+		</div>
 
-	<div class="widget-content nopadding">
-		<table class="table table-bordered data-table">
-			<thead>
-				<tr>
-					<th>No</th>
-					<th>Project</th>
-					<th>Budget</th>
-					<th>Comps</th>
-					<th>Ultimates</th>
-					<th>Opt</th>
-				</tr>
-			</thead>
-			<tbody>
-			
-			<tr class="gradeX">
-				<td>1</td>
-				<td><a href="/filmslate">julia hot</a></td>
-				<td>
-					
-					    
-							$200,000,000
-					    
-					    
-					
+
+
+
+
+
+<div id="content">
+		<div id="content-header">
+			<h1>two</h1>
+			<div class="btn-group">
 				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c6408538"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t1942022"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			<tr class="gradeX">
-				<td>2</td>
-				<td><a href="/filmslate">dddddd</a></td>
-				<td>
-					
-					    
-							$20,000,000
-					    
-					    
-					
-				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c3602872"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t3427201"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			<tr class="gradeX">
-				<td>3</td>
-				<td><a href="/filmslate">aa</a></td>
-				<td>
-					
-					    
-							$120,000,000
-					    
-					    
-					
-				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c3561392"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t1082799"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			<tr class="gradeX">
-				<td>4</td>
-				<td><a href="/filmslate">dddd</a></td>
-				<td>
-					
-					    
-							$500,000,000
-					    
-					    
-					
-				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c5838409"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t1910808"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			<tr class="gradeX">
-				<td>5</td>
-				<td><a href="/filmslate">ergo</a></td>
-				<td>
-					
-					    
-							$66,666,666
-					    
-					    
-					
-				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c3108303"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t3143879"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			<tr class="gradeX">
-				<td>6</td>
-				<td><a href="/filmslate">3</a></td>
-				<td>
-					
-					    
-							$30,000,000,000
-					    
-					    
-					
-				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c0746714"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t1409074"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			<tr class="gradeX">
-				<td>7</td>
-				<td><a href="/filmslate">2</a></td>
-				<td>
-					
-					    
-							$20,000,000
-					    
-					    
-					
-				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c0383550"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t5354519"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			<tr class="gradeX">
-				<td>8</td>
-				<td><a href="/filmslate">1</a></td>
-				<td>
-					
-					    
-							$30,000,000
-					    
-					    
-					
-				
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/comps/mycomps/c2033208"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					
-				</td>
-				<td class="taskStatus">
-					
-				    
-					<span class="done"><a href="/ultimates/my/t9089060"><i class="icon-ok"></i></a> done</span>
-				    
-				    
-					 
-				</td>
-				<td class="taskOptions">
-					<a href="" class="tip-top" data-original-title="Delete"><i class="icon-remove"></i></a>
-				</td>
-			</tr>
-			
-			</tbody>
-		</table>
+				<a id="globalAskBtn" class="btn btn-warning btn-large" title="Ask us anything!"><i class="icon-question-sign icon-white"></i> Ask us anything!</a>
+			</div>
+		</div>
+		
+		<div id="breadcrumb">
+				<a href="/" title="Go to Home" class="tip-bottom"><i
+					class="icon-home"></i> Home</a>
+				<a href="/myslate">Project</a>
+						<a href="/myslate/s0139888" class="current">two</a>
+						</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+						<div class="span12">
+							<style>
+.test {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+    margin: 0 0 10px;
+    padding: 13px 20px 10px;
+    position: relative;
+}
+.test strong {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.test small {
+    color: #888888;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 5px;
+}
+divider {
+    border-color: #DDDDDD;
+    border-style: dashed;
+    border-width: 1px 0 0;
+    min-height: 0;
+    padding: 0;
+}
+</style>
+
+<div class="widget-box widget-plain">
+	<div class="widget-content center">
+
+		<h4>
+		<a href="#" rel="quotrabox-collapse" data-toggle="collapse" data-target="#test1_target" data-key="TEST1">
+    		Your film control panel.<span class="asterisk">*</span>
+		</a>
+		</h4>
+		<div id="test1_target" class="collapse quotra-loading-collapse">
+		<p>Loading..</p>
+		</div>
 	</div>
 </div>
-
-
-
-			</div>
-		</div>
-	    
+<div class="widget-box">
+	<div class="widget-title"><h5>Project</h5></div>
+	<div class="widget-content">
 		
 		<div class="row-fluid">
-			<div id="footer" class="span12">
+			<div class="span8 test"><i class="icon-arrow-right"></i> <strong>Outline</strong> <small>Coming soon!</small></div>
+			<div class="span2 test"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			<div class="span2 test"><i class="icon-star-empty"></i> <strong>10</strong></div>
+		</div>
+		<div class="row-fluid">
+			<div class="test span8"><i class="icon-arrow-right"></i> <strong>Treatment</strong> <small>Coming soon!</small></div>
+			<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+		</div>
+		<div class="row-fluid">
+			<div class="test span8"><i class="icon-arrow-right"></i> <strong>Script</strong> <small>Coming soon!</small></div>
+			<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+		</div>
+		<div class="row-fluid">
+			<div class="test span8"><i class="icon-arrow-right"></i> <strong>Cast</strong> <small>Coming soon!</small></div>
+			<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+		</div>
+			
+			
+			<div class="row-fluid">
+						<div class="test span8">
+							<a href="/myslate/s0139888/comps/talent"><i class="icon-arrow-right"></i> <strong>Evaluate Cast</strong> <small>create comps</small></a>
+						</div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+					</div>
+					<div class="row-fluid">
+						<div class="test span8">
+							<i class="icon-arrow-right"></i> <strong>Find Comparables ("Comps")</strong> <small>Coming soon!</small>
+						</div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+					</div>
+					<div class="row-fluid">
+						<div class="test span8">
+							<a href="/myslate/s0139888/comps/direct"><i class="icon-arrow-right"></i> <strong>Run Comparables ("Comps")</strong> <small>create comps</small></a>
+						</div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+					</div>
+			    <div class="row-fluid">
+						<div class="test span8">
+							<i class="icon-arrow-right"></i> <strong>Ultimates</strong> <small>create comps first</small>
+						</div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+						<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+					</div>
+				    <div class="row-fluid">
+				<div class="test span8"><i class="icon-arrow-right"></i> <strong>Advances and Minimum Guarantees</strong> <small>Coming soon!</small></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			</div>
+			<div class="row-fluid">
+				<div class="test span8"><i class="icon-arrow-right"></i> <strong>Budget</strong> <small>Coming soon!</small></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			</div>
+			<div class="row-fluid">
+				<div class="test span8"><i class="icon-arrow-right"></i> <strong>State Incentives</strong> <small>Coming soon!</small></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			</div>
+			<div class="row-fluid">
+				<div class="test span8"><i class="icon-arrow-right"></i> <strong>Schedule</strong> <small>Coming soon!</small></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			</div>
+			<div class="row-fluid">
+				<div class="test span8"><i class="icon-arrow-right"></i> <strong>Sales estimates</strong> <small>Coming soon!</small></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+				<div class="test span2"><i class="icon-star-empty"></i> <strong>10</strong></div>
+			</div>
+								
+	</div>
+</div>	</div>
+					</div>
+				<div class="row-fluid">
+				<div id="footer" class="span12"></div>
 			</div>
 		</div>
 	</div>
-	
-	
-
-    </div>
-    <div class="footer">
+	<div id="globalAskModal" class="modal hide">
+	<div class="modal-header">
+		<button data-dismiss="modal" class="close" type="button">×</button>
+		<h3>Ask us anything!</h3>
+	</div>
+	<div class="modal-body">
+	<form class="form-horizontal" method="post" action=""
+		id="sendRequestForm" novalidate="novalidate">
+		<div class="control-group">
+			<div class="controls no-control">
+				<input type="text" class="full-input" name="sendRequestTitle" id="sendRequestTitle" placeholder="Subject" value="" />
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls no-control">
+				<textarea class="ask-box" class="full-input" style="width:95%;" id="sendRequestContents" placeholder="Contents"
+					name="sendRequestContents"></textarea>
+			</div>
+		</div>
+		<input type="hidden" name="sendRequestUrl" id="sendRequestUrl"
+			value='/myslate/s0139888' />
+	</form>
+	</div>
+	<div class="modal-footer">
+		<span id="sendRequestWrap"><button class="btn btn-info" id="sendRequestBtn">Send</button> <a data-dismiss="modal" class="btn" href="#">Cancel</a></span> 
+		<span class="pull-right" style="display: none" id="sendRequestLoadingWrap"><img	src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span> 
+		
+	</div>
+</div><div id="footer">
 		<div class="footer-inner">
 			<div class="container">
 				<div class="row">
@@ -434,7 +228,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push([ '_setAccount', 'UA-32128189-1' ]);
