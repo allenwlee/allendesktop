@@ -5,4 +5,8 @@ class SplashpageController < ApplicationController
   def about
   end
 
+  def index_1
+  end
+
+
 end

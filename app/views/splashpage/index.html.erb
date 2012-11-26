@@ -12,82 +12,133 @@
 <script src="http://external.filmquotra.com/assets/res/js/createProject.js"></script>
 <script src="http://external.filmquotra.com/assets/res/js/sendRequest.js"></script>
 </head>
-<body>
-	<div id="header">
+<body id="splashPage">
 			<h1><a href="/">filmquotra</a></h1>		
-		</div>
-
-
-<div id="content">
-
-			<div id="splashTitleArea">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span6">
+					<div id="splashTitleArea">
 					<h1>&#8220;Everything you always wanted to know about<span class="fqEmphasis">
 					film finance</span><span class="fqAsterisk">*</span></h1>
 					</br>
 					<h3 class="fqAsterisk">*</h3><h3 class="butWereAfraid"><a href="../about">but were afraid to ask.&#8221;</a></h3>
-			</div>
+				</div><!--splashtitlearea end-->
+		   </div><!--span end-->
+		   <div class="span6">
+				<div id="loginbox">
+					<form id="loginform" class="form-vertical" action="/login"
+						method="POST">
+						<p>Enter email and password to continue.</p>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-user"></i></span><input
+										type="text" placeholder="Email" name="userid" id="userid"
+										value="" />
+								</div>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-lock"></i></span><input
+										type="password" placeholder="Password" name="passwd"
+										id="passwd" />
+								</div>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-prepend">
+									<label> <input type="checkbox" name="rememberid"
+										>
+										Remember email <!-- <input type="checkbox" name="rememberme"> Remember me -->
+									</label>
+								</div>
+							</div>
+						</div>
 
-		
-		<div class="container-fluid">
-			<div class="row-fluid">
-			
-						<div class="span12">
-							<div class="widget-box">
-	<div class="widget-title">
-		
-	</div>
-	<div class="widget-content nopadding">
-		<form class="form-horizontal" method="post" action="/myslate/create" id="createForm">
-			<div class="control-group">
-				<label class="control-label"><a rel="quotrabox" data-key="TEST">Project Title</a> <span class="asterisk">*</span> </label>
-				<div class="controls">
-					<input type="text" name="title" id="title" value="" />
+
+						<div class="form-actions">
+							<span class="pull-left"><a href="#" class="flip-link"
+								id="to-recover">Lost password?</a></span> <span class="pull-right"
+								id="loginWrap"><button class="btn btn-success"
+									type="submit" id="loginBtn">Login</button></span> <span
+								class="pull-right" style="display: none" id="loginLoadingWrap"><img
+								src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span>
+						</div>
+					</form>
+					<form id="recoverform" action="#" class="form-vertical">
+						<p id="msgBox">Enter your e-mail address below and we will
+							send you instructions how to recover a password.</p>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-prepend" id="mailInput">
+									<span class="add-on"><i class="icon-envelope"></i></span><input
+										type="text" placeholder="E-mail address" name="email"
+										id="email" />
+								</div>
+							</div>
+						</div>
+						<div class="form-actions" style="margin-top: 57px;">
+							<span class="pull-left"><a href="#" class="flip-link"
+								id="to-login">&lt; Back to login</a></span> <span class="pull-right"
+								id="getPasswdWrap"><button type="submit"
+									id="getPasswdBtn" class="btn btn-inverse">Get Password</button></span>
+							<span class="pull-right" style="display: none"
+								id="getPasswdLoadingWrap"><img
+								src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span>
+						</div>
+					</form>
 				</div>
-			</div>
-			<div class="form-actions">
-				<button class="btn btn-success" style="width: 160px; height: 40px"
-					id="createBtn">Create</button>
-			</div>
-		</form>
-	</div>
-</div>
 
-    </div>
-					</div>
-				<div class="row-fluid">
-				<div id="footer" class="span12"></div>
-			</div>
-		</div>
-	</div>
-	<div id="globalAskModal" class="modal hide">
-	<div class="modal-header">
-		<button data-dismiss="modal" class="close" type="button">×</button>
-		<h3>Ask us anything!</h3>
-	</div>
-	<div class="modal-body">
-	<form class="form-horizontal" method="post" action=""
-		id="sendRequestForm" novalidate="novalidate">
-		<div class="control-group">
-			<div class="controls no-control">
-				<input type="text" class="full-input" name="sendRequestTitle" id="sendRequestTitle" placeholder="Subject" value="" />
-			</div>
-		</div>
-		<div class="control-group">
-			<div class="controls no-control">
-				<textarea class="ask-box" class="full-input" style="width:95%;" id="sendRequestContents" placeholder="Contents"
-					name="sendRequestContents"></textarea>
-			</div>
-		</div>
-		<input type="hidden" name="sendRequestUrl" id="sendRequestUrl"
-			value='/myslate/create' />
-	</form>
-	</div>
-	<div class="modal-footer">
-		<span id="sendRequestWrap"><button class="btn btn-info" id="sendRequestBtn">Send</button> <a data-dismiss="modal" class="btn" href="#">Cancel</a></span> 
-		<span class="pull-right" style="display: none" id="sendRequestLoadingWrap"><img	src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span> 
-		
-	</div>
-</div><div id="footer">
+				<div id="registerbox">
+					<form class="form-vertical" id="registerform" method="POST"
+						action="/register">
+						<p>Online software that teaches you the film business while creating your custom business plan. <a>Learn More.</a></p>
+						<p>Sign Up</p>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-user"></i></span><input
+										type="text" placeholder="Username" name="username"
+										id="regUsername" autocomplete="Off" />
+								</div>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-envelope"></i></span><input
+										type="text" placeholder="Email" name="userid" id="regUserid"
+										autocomplete="Off" />
+								</div>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-lock"></i></span><input
+										type="password" placeholder="Password" name="passwd"
+										id="regPasswd" autocomplete="Off" />
+								</div>
+							</div>
+						</div>
+						<div class="form-actions">
+							<span class="pull-left"><a href="#" class="flip-link"
+								id="to-recover"></a></span> <span class="pull-right" id="registerWrap"><button
+									class="btn btn-success" type="submit" id="registerBtn">Register</button></span>
+							<span class="pull-right" style="display: none"
+								id="registerLoadingWrap"><img
+								src="http://static.filmquotra.com/assets/res/img/loader.gif" /></span>
+						</div>
+					</form>
+				</div><!--end registerbox-->
+			</div><!--end span6-->
+		</div><!--end rowfluid-->
+
+
+<div id="footer">
 		<div class="footer-inner">
 			<div class="container">
 				<div class="row">
